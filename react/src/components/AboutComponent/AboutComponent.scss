@@ -1,0 +1,145 @@
+.AboutComponent {
+    width: 100%;
+    margin: 30px auto;
+
+
+    .container {
+        max-width: 1600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .rightText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        // width: 49%;
+
+        .titLogo {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // background-color: red;
+                .aboutLogo img {
+                    width: 140px;
+                }
+
+            .title {
+                font-size: 48px;
+                color: #2D4B70;
+
+                font-weight: 700;
+            }
+
+        }
+
+        .text1 {
+            margin-top: 40px;
+            // text-align: right;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            width: 100%;
+        }
+
+        .text2 {
+            text-align: left;
+            width: 100%;
+            // background: #000;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 6%;
+        }
+
+    }
+
+
+
+    @media(max-width:800px) {
+
+        .container {
+            flex-direction: column;
+
+            .leftImages {
+                width: 100%;
+
+                .aboutImage img {
+                    width: 100%;
+                }
+            }
+
+            .rightText {
+                align-items: center;
+                width: 100%;
+
+                .title {
+                    font-size: 25px;
+                    color: #2D4B70;
+
+                    font-weight: 700;
+                }
+
+                .text1 {
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 15px;
+
+                }
+
+                .text2 {
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+    @media(max-width:540px) {
+
+        .container {
+            flex-direction: column;
+
+            
+            .rightText {
+                align-items: center;
+                width: 100%;
+                .titLogo {
+                    width: 100%;
+    
+                    .aboutLogo img {
+                        width: 100px;
+                    }
+                }
+
+                .title {
+                    font-size: 25px;
+                    color: #2D4B70;
+
+                    font-weight: 700;
+                }
+
+                .text1 {
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 15px;
+
+                }
+
+                .text2 {
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+
+}

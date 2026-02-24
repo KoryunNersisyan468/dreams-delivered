@@ -1,0 +1,160 @@
+.MainComponent {
+    background: #2D4B70;
+    padding-bottom: 3%;
+    .container {
+
+        .title {
+            width: 100%;
+            font-size: 48px;
+            color: #F9F8FF;
+            padding-left: 10%;
+            padding-top: 3%;
+        }
+
+        .imageHelp {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 3%;
+
+            .imageContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width: 370px;
+                overflow: hidden;
+                margin-top: 5%;
+
+                img {
+                    // width: 100%;
+                    height: 319px;
+                    object-fit: contain;
+                    object-position: 50% 50%;
+                }
+
+                .text {
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin-top: 35px;
+                }
+            }
+            .OneImageContainer{
+                display: none;
+                .hiddenConta{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: 270px;
+                    }
+                }
+                
+
+            }
+            .pointsContainer{
+                display: none;
+                margin: 0 auto;
+                
+                .point{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color:white;
+                    cursor: pointer;
+                }
+                .active{
+                    background-color: red ;
+                }
+            }
+        }
+        @media(max-width:1029px){
+            .imageContainer{
+                display: none !important;
+            }
+            .OneImageContainer{
+                display: block !important;
+            }
+            .pointsContainer{
+                margin: 0 auto;
+                width: 40%;
+                display: flex !important;
+                align-items: center;
+                justify-content: space-between;
+                
+
+            }
+            .imageHelp{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    // width: 100%;
+                    height: 319px;
+                    object-fit: contain;
+                    object-position: 50% 50%;
+                }
+
+                .text {
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin-top: 35px;
+                }
+
+            }
+
+        }
+        @media( max-width:617px){
+            .title{
+                font-size: 40px;
+            }
+        }
+        @media( max-width:564px){
+            .title{
+                font-size: 36px;
+            }
+        }
+        @media( max-width:523px){
+            .title{
+                font-size: 35px;
+            }
+        }
+        @media( max-width:500px){
+            .title{
+                font-size: 32px;
+            }
+        }
+        @media( max-width:463px){
+            .title{
+                font-size: 30px;
+            }
+        }
+        @media( max-width:435px){
+            .title{
+                font-size: 27px;
+            }
+        }
+        @media( max-width:403px){
+            .title{
+                font-size: 25px;
+            }
+        }
+        @media( max-width:403px){
+            .title{
+                font-size: 22px;
+            }
+        }
+
+    }
+
+}
+
+

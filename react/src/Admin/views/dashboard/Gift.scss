@@ -1,0 +1,175 @@
+.GiftModal {
+    position: relative;
+    font-family: Mordato;
+  
+    .modal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: rgba(0, 0, 0, 0.5);
+  
+
+      .container {
+        width: 90%;
+        max-width: 800px;
+        height: 690px;
+        background: #dcf0ff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+        @media screen and (max-width: 768px) {
+          width: 95%;
+          max-width: none;
+          height: auto;
+        }
+  
+        .conta {
+          overflow: hidden;
+  
+          .topBlock {
+            margin: 20px auto;
+            width: 97%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+  
+            .btnBack,
+            .close {
+              transition: all 0.3s linear;
+              img {
+                width: 100%;
+              }
+  
+              &:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+              }
+            }
+  
+            .topTitle {
+              font-weight: 500;
+              font-size: 32px;
+              color: #2d4b70;
+              margin: 0px !important;
+            }
+          }
+  
+          .formContainer {
+            margin: 1% auto;
+            width: 100%;
+  
+            form {
+              width: 100%;
+              text-align: center;
+              margin-top: 4%;
+  
+              .inputContainer {
+                overflow: hidden;
+                width: 100%;
+                margin: 0 auto;
+  
+                @media screen and (min-width: 768px) {
+                  width: 455px;
+                }
+  
+                .inputs {
+                  margin: 0 auto;
+  
+                  .formTitle {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #2d4b70;
+                    text-align: left;
+                    margin-bottom: 10px;
+                  }
+  
+                  input {
+                    width: 100%;
+                    margin-top: 20px;
+                    border-radius: 2px;
+                    background: linear-gradient(
+                      0deg,
+                      rgba(0, 28, 63, 0.15),
+                      rgba(0, 28, 63, 0.15)
+                    );
+                    border: 1px solid rgba(220, 240, 255, 0.8);
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #ffffff80;
+                    padding: 10px 45px 10px 10px;
+  
+                    &::placeholder {
+                      color: #ffffff80;
+                    }
+                  }
+  
+                  .error {
+                    border: 1px solid red;
+                  }
+  
+                  .errorMessage {
+                    color: red;
+                    font-size: 18px;
+                  }
+                }
+  
+                .saveBtn {
+                  margin-top: 30px;
+                  padding: 15px 45px;
+                  background: #c12026;
+                  gap: 10px;
+                  border-radius: 45px;
+                  font-size: 16px;
+                  transition: all 0.3s linear;
+                  color: #dcf0ff;
+  
+                  &:hover {
+                    transform: scale(1.05);
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+  
+            .bottomText {
+              margin-top: 37px;
+              text-align: center;
+  
+              .text1,
+              .text2 {
+                font-weight: 900;
+                font-size: 16px;
+                color: linear-gradient(0deg, #2d4b70, #2d4b70),
+                  linear-gradient(
+                    0deg,
+                    rgba(220, 240, 255, 0.15),
+                    rgba(220, 240, 255, 0.15)
+                  );
+                letter-spacing: 2%;
+              }
+            }
+          }
+        }
+        @media (max-width:465px){
+          .topTitle{
+            font-size: 28px !important;
+          }
+        }
+        @media (max-width:380px){
+          .topTitle{
+            font-size: 26px !important;
+          }
+        }
+      }
+    }
+  }
+  

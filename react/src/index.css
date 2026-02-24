@@ -1,0 +1,71 @@
+/*eslint-disable*/
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: "ArilalArmSt";
+}
+
+a {
+  text-decoration: none;
+  color: #DCF0FF;
+}
+
+.paginationComponent {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  gap: 15px;
+}
+
+.pagination>.active {
+  background: #174e78;
+
+}
+
+.pagination>.active>button {
+  color: white !important;
+}
+
+.pagination>li>button {
+  background: none;
+  padding: 10px;
+}
+
+.pagination>li>button:hover {
+  background-color: #2a70a6;
+}
+
+body {
+  background: #DCF0FF;
+}
+
+.App {
+  overflow-x: hidden;
+  background: #DCF0FF;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.jodit-status-bar {
+  display: none !important;
+}

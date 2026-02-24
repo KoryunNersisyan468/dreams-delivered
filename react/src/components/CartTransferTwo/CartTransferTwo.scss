@@ -1,0 +1,122 @@
+.CartTransferTwo {
+  position: relative;
+  font-family: Mordato;
+
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      min-height: 520px;
+      background: #dcf0ff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+      .conta {
+        .saveBtn {
+          margin-top: 40px;
+          margin-left: 175px;
+          padding: 15px 45px;
+          background: #c12026;
+          gap: 10px;
+          border-radius: 45px;
+          font-size: 16px;
+          transition: all 0.3s linear;
+          color: #dcf0ff;
+  
+          &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+          }
+        }
+        .topBlock {
+          margin: 15px auto;
+          width: 97%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .topTitle {
+            font-weight: 500;
+            font-size: 32px;
+            letter-spacing: 2%;
+            color: #2d4b70;
+          }
+
+          .btnBack,
+          .close {
+            transition: all 0.3s linear;
+
+            img {
+              width: 100%;
+            }
+
+            &:hover {
+              transform: scale(1.05);
+              cursor: pointer;
+            }
+          }
+        }
+
+        .mainMod {
+          max-width: 592px;
+          margin: 0 auto;
+          padding: 20px; /* Reduced padding for smaller screens */
+
+          .title {
+            text-align: left;
+            color: #2d4b70;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 20px;
+          }
+
+          .link {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            row-gap: 50px; 
+
+            * {
+              width: 100%;
+              display: block;
+              font-size: 20px;
+              font-weight: 400;
+              color: #c12026;
+            }
+          }
+        }
+      }
+
+
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        .conta {
+          .topBlock {
+            .topTitle {
+              font-size: 24px; 
+            }
+          }
+
+          .mainMod {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.Home{
+    max-width:1440px;
+    margin: 0 auto;
+    background-color: #DCF0FF;
+    
+    &::-webkit-scrollbar {
+        color: red;
+      }
+    
+    .container{
+        max-width: 1440px;
+        margin: 0 auto;
+    
+
+    .headerHome{
+        // margin-bottom: 50px;
+        // height: 661px;
+        display: flex;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+}
+}
