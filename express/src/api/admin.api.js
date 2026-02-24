@@ -3,6 +3,7 @@ import express from "express";
 import { AdminController } from "../controller";
 import { ImageUploadMiddleware } from "../middlewares/image-upload.middleware";
 import {AdminValidationMiddleware} from "../middlewares/validation/index"
+import { AuthMiddleware } from "../auth/auth.middleware";
 
 const router = express.Router();
 
@@ -27,7 +28,7 @@ router.get("/getRandomInactiveDreams", AdminController.getRandomInactiveDreams);
 
 router.post(
     "/addPicture",
-    // AuthMiddleware.authenticateFor(['admin']),
+    AuthMiddleware.authenticateFor(['admin']),
     ImageUploadMiddleware.upload(),
     AdminController.addPicture
   );

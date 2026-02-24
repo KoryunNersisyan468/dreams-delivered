@@ -4,7 +4,7 @@ import { ErrorsUtil } from "../utils";
 
 const { UnauthorizedError, PermissionError } = ErrorsUtil;
 
-export default class AuthMiddleware {
+export class AuthMiddleware {
   static authenticate() {
     return (req, res, next) => {
       try {
@@ -18,7 +18,6 @@ export default class AuthMiddleware {
         const user = AuthService.validateAccessToken(accessToken);
 
         if (!user) throw new UnauthorizedError("5");
-
         res.locals.auth = { user };
         next();
       } catch (error) {
@@ -44,6 +43,7 @@ export default class AuthMiddleware {
         const scope = `access:${user.role}`;
 
         if (!access.includes(scope)) throw new PermissionError("6");
+
         res.locals.auth = { user };
         next();
       } catch (error) {
